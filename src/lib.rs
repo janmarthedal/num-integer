@@ -30,6 +30,10 @@ mod average;
 pub use crate::average::Average;
 pub use crate::average::{average_ceil, average_floor};
 
+mod ilog;
+pub use crate::ilog::ILog;
+pub use crate::ilog::{checked_ilog, checked_ilog10, checked_ilog2, ilog, ilog10, ilog2};
+
 pub trait Integer: Sized + Num + PartialOrd + Ord + Eq {
     /// Floored integer division.
     ///
